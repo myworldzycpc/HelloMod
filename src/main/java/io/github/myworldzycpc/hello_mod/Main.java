@@ -23,7 +23,7 @@ public class Main {
         Player player = event.getPlayer();
         Level level = player.level;
 
-        player.sendMessage(new TextComponent("Hello, " + player.getDisplayName().getString() + ". From " + (level.isClientSide() ? "CLIENT" : "SERVER") + "."), Util.NIL_UUID);
+        player.sendMessage(new TextComponent("Hi, " + player.getDisplayName().getString() + ". From " + (level.isClientSide() ? "CLIENT" : "SERVER") + "."), Util.NIL_UUID);
     }
 
     @SubscribeEvent
